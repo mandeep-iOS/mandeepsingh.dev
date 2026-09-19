@@ -3,23 +3,658 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Mandeep Singh | Senior iOS Engineer</title>
+
+  <meta
+    name="description"
+    content="Mandeep Singh — Senior iOS Engineer with 5+ years of experience in Swift, SwiftUI, UIKit, Swift Concurrency, BLE/IoT, Core ML, On-Device AI and RAG."
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display",
+                   "Segoe UI", sans-serif;
+      background: #090b10;
+      color: #f5f5f7;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin: auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 28px 0;
+    }
+
+    nav .name {
+      font-size: 19px;
+      font-weight: 700;
+    }
+
+    nav .links {
+      display: flex;
+      gap: 24px;
+    }
+
+    nav a {
+      color: #aeb3c2;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    .hero {
+      padding: 110px 0 100px;
+      max-width: 900px;
+    }
+
+    .eyebrow {
+      color: #8da2ff;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: clamp(52px, 9vw, 92px);
+      line-height: .98;
+      letter-spacing: -0.04em;
+      margin: 20px 0;
+    }
+
+    .hero h2 {
+      max-width: 850px;
+      margin: 0 0 28px;
+      color: #b8bdc9;
+      font-size: clamp(26px, 4vw, 42px);
+      line-height: 1.2;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+    }
+
+    .hero p {
+      max-width: 760px;
+      color: #c4c8d2;
+      font-size: 19px;
+    }
+
+    .buttons {
+      margin-top: 36px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 20px;
+      border-radius: 10px;
+      background: #f5f5f7;
+      color: #0a0c10;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .button.secondary {
+      background: #151820;
+      border: 1px solid #2c303a;
+      color: #f5f5f7;
+    }
+
+    section {
+      padding: 80px 0;
+      border-top: 1px solid #222630;
+    }
+
+    .section-label {
+      color: #8da2ff;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    h3 {
+      font-size: 38px;
+      letter-spacing: -0.03em;
+      margin: 8px 0 12px;
+    }
+
+    .section-intro {
+      color: #aeb3c2;
+      max-width: 720px;
+      margin-bottom: 38px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: #11141b;
+      border: 1px solid #252933;
+      border-radius: 16px;
+      padding: 26px;
+      transition: transform .2s ease, border-color .2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: #434957;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 5px 9px;
+      margin-bottom: 14px;
+      border-radius: 999px;
+      background: #1d2230;
+      color: #9cafff;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .card h4 {
+      font-size: 23px;
+      margin: 0 0 8px;
+    }
+
+    .card p {
+      color: #aeb3c2;
+      margin: 0 0 16px;
+    }
+
+    .stack {
+      color: #7f8796;
+      font-size: 14px;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 18px;
+      color: #d5dcff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .experience {
+      display: grid;
+      gap: 28px;
+    }
+
+    .role {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 26px;
+    }
+
+    .role-date {
+      color: #7f8796;
+    }
+
+    .role h4 {
+      margin: 0;
+      font-size: 21px;
+    }
+
+    .role-company {
+      color: #9da3b0;
+      margin: 4px 0 10px;
+    }
+
+    .role p {
+      color: #b2b7c2;
+      margin: 0;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    .skill {
+      background: #151820;
+      border: 1px solid #292d37;
+      padding: 8px 12px;
+      border-radius: 999px;
+      color: #c7cad2;
+      font-size: 14px;
+    }
+
+    .education-card {
+      max-width: 760px;
+    }
+
+    footer {
+      border-top: 1px solid #222630;
+      padding: 38px 0 50px;
+      color: #777e8d;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    @media (max-width: 760px) {
+      nav .links a:nth-child(-n+2) {
+        display: none;
+      }
+
+      .hero {
+        padding: 75px 0;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .role {
+        grid-template-columns: 1fr;
+        gap: 5px;
+      }
+
+      h3 {
+        font-size: 32px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Mandeep Singh</h1>
 
-  <h2>Senior iOS Engineer · Swift · SwiftUI · On-Device AI</h2>
+<div class="container">
 
-  <p>
-    I build production-grade Apple applications using Swift, SwiftUI,
-    Swift Concurrency, BLE/IoT, Core ML and practical AI systems.
-  </p>
+  <!-- Navigation -->
+  <nav>
+    <div class="name">Mandeep Singh</div>
 
-  <p>5+ years of commercial iOS engineering experience.</p>
+    <div class="links">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="https://github.com/mandeep-iOS" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/mandeep-singh-50834219a/" target="_blank">
+        LinkedIn
+      </a>
+    </div>
+  </nav>
 
-  <a href="#">Projects</a> |
-  <a href="https://github.com/mandeep-iOS">GitHub</a> |
-  <a href="https://www.linkedin.com/in/mandeep-singh-50834219a/">LinkedIn</a>
+
+  <!-- Hero -->
+  <main>
+
+    <div class="hero">
+      <div class="eyebrow">Senior iOS Engineer · Canada</div>
+
+      <h1>Mandeep Singh</h1>
+
+      <h2>
+        Building native Apple applications,
+        connected experiences and practical AI systems.
+      </h2>
+
+      <p>
+        Senior iOS Engineer with 5+ years of commercial experience building
+        and shipping production mobile applications using Swift, UIKit,
+        SwiftUI, Swift Concurrency and BLE/IoT.
+      </p>
+
+      <p>
+        Currently focused on modern Apple-platform engineering,
+        on-device AI, Core ML, RAG and LLM-powered applications.
+      </p>
+
+      <div class="buttons">
+        <a class="button" href="#work">View Selected Work</a>
+
+        <a class="button secondary"
+           href="https://github.com/mandeep-iOS"
+           target="_blank">
+          GitHub
+        </a>
+
+        <a class="button secondary"
+           href="https://www.linkedin.com/in/mandeep-singh-50834219a/"
+           target="_blank">
+          LinkedIn
+        </a>
+      </div>
+    </div>
+
+
+    <!-- Selected Work -->
+    <section id="work">
+
+      <div class="section-label">Portfolio</div>
+      <h3>Selected Work</h3>
+
+      <p class="section-intro">
+        A mix of production applications, connected-device engineering
+        and current iOS + AI projects.
+      </p>
+
+      <div class="grid">
+
+        <!-- TVS -->
+        <article class="card">
+          <span class="badge">Commercial · Extentia</span>
+
+          <h4>TVS iQube</h4>
+
+          <p>
+            Contributed to the connected electric-vehicle companion
+            application, working across BLE connectivity, telemetry,
+            navigation, location tracking and geofencing.
+          </p>
+
+          <div class="stack">
+            Swift · Core Bluetooth · BLE · Core Location · Telematics
+          </div>
+
+          <a href="https://www.tvsmotor.com/electric-scooters/tvs-iqube"
+             target="_blank">
+            View TVS iQube →
+          </a>
+        </article>
+
+
+        <!-- DanceX -->
+        <article class="card">
+          <span class="badge">Production iOS</span>
+
+          <h4>DanceX</h4>
+
+          <p>
+            Native iPhone and iPad application built from scratch using
+            programmatic UIKit, MVVM architecture, API integration and
+            Firebase production diagnostics.
+          </p>
+
+          <div class="stack">
+            Swift · UIKit · MVVM · Alamofire · Firebase Crashlytics
+          </div>
+
+          <a href="https://apps.apple.com/us/app/dancex-dance-anytime-anywhere/id1556061815"
+             target="_blank">
+            View on App Store →
+          </a>
+        </article>
+
+
+        <!-- AskMyDocs -->
+        <article class="card">
+          <span class="badge">iOS + RAG</span>
+
+          <h4>AskMyDocs</h4>
+
+          <p>
+            Native iOS document Q&A application using PDFKit,
+            embeddings and local in-memory similarity search for
+            context retrieval.
+          </p>
+
+          <div class="stack">
+            SwiftUI · PDFKit · Voyage AI · RAG · Claude API
+          </div>
+        </article>
+
+
+        <!-- RecallAI -->
+        <article class="card">
+          <span class="badge">Offline-First AI</span>
+
+          <h4>RecallAI</h4>
+
+          <p>
+            Offline-first iOS knowledge application combining keyword
+            search, similarity-based retrieval, local processing and
+            optional cloud LLM fallback.
+          </p>
+
+          <div class="stack">
+            Swift · SwiftUI · Local Retrieval · Keychain · LLM
+          </div>
+        </article>
+
+
+        <!-- MyVaani -->
+        <article class="card">
+          <span class="badge">macOS + AI</span>
+
+          <h4>MyVaani AI</h4>
+
+          <p>
+            Multilingual macOS audio application using Swift Concurrency
+            and Actors to separate real-time audio processing from UI updates.
+          </p>
+
+          <div class="stack">
+            Swift · SwiftUI · AVFoundation · Core Audio · Actors
+          </div>
+        </article>
+
+
+        <!-- GAIA -->
+        <article class="card">
+          <span class="badge">AI Agents</span>
+
+          <h4>GAIA Agent</h4>
+
+          <p>
+            Hybrid AI agent designed for GAIA Level-1 multimodal and
+            factual evaluation tasks using deterministic routing,
+            web retrieval and asynchronous inference.
+          </p>
+
+          <div class="stack">
+            Python · Agents · Groq · Web Retrieval · Async
+          </div>
+
+          <a href="https://huggingface.co/spaces/mdeep14/gaia-agent-unit4/tree/main"
+             target="_blank">
+            View on Hugging Face →
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- Experience -->
+    <section id="experience">
+
+      <div class="section-label">Background</div>
+      <h3>Experience</h3>
+
+      <p class="section-intro">
+        Commercial iOS engineering experience since 2018, followed by
+        independent work focused on modern iOS and applied AI.
+      </p>
+
+      <div class="experience">
+
+        <div class="role">
+          <div class="role-date">2026 — Present</div>
+          <div>
+            <h4>Software Engineer — iOS & AI | Independent</h4>
+            <div class="role-company">Golden Gate Learning Lab</div>
+            <p>
+              Building native iOS and macOS projects while exploring
+              on-device AI, Core ML, RAG, structured outputs,
+              tool calling and MCP.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="role">
+          <div class="role-date">2023 — 2024</div>
+          <div>
+            <h4>Senior iOS Developer</h4>
+            <div class="role-company">Freelance</div>
+            <p>
+              Built and improved production iOS features, Core Data
+              persistence, asynchronous REST integrations and
+              production diagnostics.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="role">
+          <div class="role-date">2022 — 2023</div>
+          <div>
+            <h4>Software Professional — iOS</h4>
+            <div class="role-company">Extentia Information Technology</div>
+            <p>
+              Worked on TVS iQube telemetry, Core Bluetooth,
+              geofencing, location tracking, performance profiling
+              and production stability.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="role">
+          <div class="role-date">2018 — 2022</div>
+          <div>
+            <h4>iOS Engineering</h4>
+            <div class="role-company">
+              Saffron Tech · Smartwebzone · CQLsys · tecHangouts · Wegile
+            </div>
+            <p>
+              Built production iOS applications using Swift, UIKit,
+              MVVM, Core Data, Realm, REST APIs, subscriptions,
+              payment integrations and App Store deployment.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+
+      <div class="section-label">Technical Focus</div>
+      <h3>Engineering Stack</h3>
+
+      <div class="skills">
+        <span class="skill">Swift</span>
+        <span class="skill">SwiftUI</span>
+        <span class="skill">UIKit</span>
+        <span class="skill">Swift Concurrency</span>
+        <span class="skill">SwiftData</span>
+        <span class="skill">Core Data</span>
+        <span class="skill">Realm</span>
+        <span class="skill">MVVM</span>
+        <span class="skill">Clean Architecture</span>
+        <span class="skill">Core Bluetooth</span>
+        <span class="skill">BLE / IoT</span>
+        <span class="skill">Core Location</span>
+        <span class="skill">Core ML</span>
+        <span class="skill">On-Device AI</span>
+        <span class="skill">RAG</span>
+        <span class="skill">LLM APIs</span>
+        <span class="skill">Python</span>
+        <span class="skill">FastAPI</span>
+        <span class="skill">Xcode Instruments</span>
+      </div>
+
+    </section>
+
+
+    <!-- Learning -->
+    <section>
+
+      <div class="section-label">Continuous Learning</div>
+      <h3>Data Science & Applied AI</h3>
+
+      <div class="card education-card">
+
+        <h4>WorldQuant University</h4>
+
+        <p>
+          Project-based professional development across data science,
+          deep learning and computer vision.
+        </p>
+
+        <div class="stack">
+          Python · Data Science · Machine Learning · PyTorch ·
+          Neural Networks · CNNs · Computer Vision
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section>
+
+      <div class="section-label">Contact</div>
+      <h3>Let's Connect</h3>
+
+      <p class="section-intro">
+        Open to Senior iOS Engineer, Mobile Engineer and
+        iOS + AI Engineer opportunities across Canada and remote teams.
+      </p>
+
+      <div class="buttons">
+
+        <a class="button"
+           href="https://www.linkedin.com/in/mandeep-singh-50834219a/"
+           target="_blank">
+          LinkedIn
+        </a>
+
+        <a class="button secondary"
+           href="https://github.com/mandeep-iOS"
+           target="_blank">
+          GitHub
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <span>© 2026 Mandeep Singh</span>
+    <span>Senior iOS Engineer · Canada</span>
+  </footer>
+
+</div>
+
 </body>
 </html>
