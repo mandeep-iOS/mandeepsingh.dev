@@ -28,10 +28,7 @@
     content="Senior iOS Engineer building native Apple applications, connected systems and practical AI."
   >
 
-  <meta
-    property="og:type"
-    content="website"
-  >
+  <meta property="og:type" content="website">
 
   <meta
     property="og:url"
@@ -55,19 +52,12 @@
       --bg-deep: #040509;
 
       --text: #f5f6f8;
-
       --white: #ffffff;
 
       --silver-light: #eef0f3;
       --silver: #d8dbe1;
       --silver-mid: #b9bec8;
       --silver-dark: #7f8794;
-
-      --surface:
-        rgba(255, 255, 255, 0.055);
-
-      --surface-hover:
-        rgba(255, 255, 255, 0.085);
 
       --border:
         rgba(255, 255, 255, 0.10);
@@ -81,7 +71,6 @@
       --shadow-soft:
         0 18px 45px rgba(0, 0, 0, 0.18);
 
-      --radius-xl: 24px;
       --radius-lg: 19px;
       --radius-md: 13px;
 
@@ -97,11 +86,9 @@
       box-sizing: border-box;
     }
 
-
     html {
       scroll-behavior: smooth;
     }
-
 
     body {
       margin: 0;
@@ -109,7 +96,6 @@
       color: var(--text);
 
       background:
-
         radial-gradient(
           circle at 12% 8%,
           rgba(255,255,255,.07),
@@ -151,7 +137,6 @@
       text-rendering: optimizeLegibility;
     }
 
-
     body::before {
       content: "";
 
@@ -161,7 +146,6 @@
       pointer-events: none;
 
       background-image:
-
         linear-gradient(
           rgba(255,255,255,.012) 1px,
           transparent 1px
@@ -185,18 +169,15 @@
       z-index: -10;
     }
 
-
     a {
       color: inherit;
     }
-
 
     button,
     input,
     textarea {
       font: inherit;
     }
-
 
     .container {
       width:
@@ -222,16 +203,12 @@
       background:
         rgba(7,8,12,.76);
 
-      backdrop-filter:
-        blur(26px);
-
-      -webkit-backdrop-filter:
-        blur(26px);
+      backdrop-filter: blur(26px);
+      -webkit-backdrop-filter: blur(26px);
 
       border-bottom:
         1px solid rgba(255,255,255,.065);
     }
-
 
     nav {
       min-height: 72px;
@@ -242,7 +219,6 @@
 
       gap: 24px;
     }
-
 
     .brand {
       color: white;
@@ -255,11 +231,9 @@
       letter-spacing: -.025em;
     }
 
-
     .brand span {
       color: var(--silver-mid);
     }
-
 
     .nav-links {
       display: flex;
@@ -267,7 +241,6 @@
 
       gap: 21px;
     }
-
 
     .nav-links a {
       position: relative;
@@ -281,7 +254,6 @@
       transition:
         color .2s ease;
     }
-
 
     .nav-links a::after {
       content: "";
@@ -300,11 +272,9 @@
         width .22s ease;
     }
 
-
     .nav-links a:hover {
       color: white;
     }
-
 
     .nav-links a:hover::after {
       width: 100%;
@@ -328,7 +298,6 @@
 
       border: 0;
     }
-
 
     .hero::before {
       content: "";
@@ -359,7 +328,6 @@
       pointer-events: none;
     }
 
-
     @keyframes heroGlow {
       0%,
       100% {
@@ -375,7 +343,6 @@
       }
     }
 
-
     .hero-content {
       position: relative;
 
@@ -383,7 +350,6 @@
 
       max-width: 960px;
     }
-
 
     .eyebrow {
       display: inline-flex;
@@ -401,8 +367,7 @@
       background:
         rgba(255,255,255,.035);
 
-      color:
-        var(--silver);
+      color: var(--silver);
 
       font-size: 13px;
       font-weight: 700;
@@ -415,7 +380,6 @@
         inset 0 1px 0
         rgba(255,255,255,.045);
     }
-
 
     .eyebrow::before {
       content: "";
@@ -430,7 +394,6 @@
       box-shadow:
         0 0 10px rgba(255,255,255,.65);
     }
-
 
     h1 {
       margin:
@@ -464,7 +427,6 @@
       color: transparent;
     }
 
-
     .hero h2 {
       max-width: 900px;
 
@@ -488,7 +450,6 @@
       letter-spacing: -.028em;
     }
 
-
     .hero p {
       max-width: 800px;
 
@@ -496,7 +457,6 @@
 
       font-size: 18px;
     }
-
 
     .hero-actions {
       display: flex;
@@ -541,7 +501,6 @@
         border-color .22s ease;
     }
 
-
     .button.primary {
       background:
         linear-gradient(
@@ -556,7 +515,6 @@
         inset 0 1px 0 white;
     }
 
-
     .button.primary:hover {
       transform:
         translateY(-3px);
@@ -564,7 +522,6 @@
       box-shadow:
         0 16px 40px rgba(0,0,0,.25);
     }
-
 
     .button.secondary {
       color: var(--silver-light);
@@ -575,10 +532,8 @@
         rgba(255,255,255,.035);
 
       backdrop-filter: blur(14px);
-
       -webkit-backdrop-filter: blur(14px);
     }
-
 
     .button.secondary:hover {
       transform:
@@ -590,7 +545,6 @@
       border-color:
         var(--border-strong);
     }
-
 
     .button-icon {
       width: 17px;
@@ -613,13 +567,11 @@
       gap: 36px;
     }
 
-
     .stat {
       position: relative;
 
       padding-left: 14px;
     }
-
 
     .stat::before {
       content: "";
@@ -642,13 +594,11 @@
         );
     }
 
-
     .stat strong {
       display: block;
 
       font-size: 21px;
     }
-
 
     .stat span {
       color: var(--silver-dark);
@@ -658,7 +608,7 @@
 
 
     /* =========================================================
-       SECTION SYSTEM
+       SECTIONS
     ========================================================= */
 
     section {
@@ -667,7 +617,6 @@
       border-top:
         1px solid rgba(255,255,255,.065);
     }
-
 
     .section-label {
       color: var(--silver-mid);
@@ -679,7 +628,6 @@
 
       text-transform: uppercase;
     }
-
 
     h3 {
       margin:
@@ -697,7 +645,6 @@
 
       letter-spacing: -.04em;
     }
-
 
     .section-intro {
       max-width: 770px;
@@ -730,7 +677,6 @@
         cubic-bezier(.2,.7,.2,1);
     }
 
-
     .reveal.visible {
       opacity: 1;
 
@@ -759,7 +705,6 @@
         );
 
       backdrop-filter: blur(20px);
-
       -webkit-backdrop-filter: blur(20px);
 
       box-shadow:
@@ -772,7 +717,6 @@
       border-radius:
         var(--radius-lg);
     }
-
 
     .glass-card::before {
       content: "";
@@ -798,12 +742,10 @@
         transform .85s ease;
     }
 
-
     .glass-card:hover::before {
       transform:
         translateX(120%);
     }
-
 
     .glass-card > * {
       position: relative;
@@ -827,23 +769,19 @@
       align-items: start;
     }
 
-
     .about-copy {
       color: #cbd0d8;
 
       font-size: 17px;
     }
 
-
     .about-copy p:first-child {
       margin-top: 0;
     }
 
-
     .focus-card {
       padding: 26px;
     }
-
 
     .focus-card h4 {
       margin:
@@ -855,7 +793,6 @@
       font-size: 18px;
     }
 
-
     .focus-row {
       padding: 11px 0;
 
@@ -864,7 +801,6 @@
 
       color: var(--silver-mid);
     }
-
 
     .focus-row:last-child {
       border-bottom: 0;
@@ -887,7 +823,6 @@
       gap: 18px;
     }
 
-
     .project-card {
       padding: 28px;
 
@@ -897,7 +832,6 @@
         box-shadow .26s ease,
         background .26s ease;
     }
-
 
     .project-card:hover {
       transform:
@@ -918,13 +852,11 @@
     }
 
 
-    .project-icon {
-      min-width: 47px;
-      width: fit-content;
-      height: 47px;
+    /* PROJECT ICONS */
 
-      padding:
-        0 13px;
+    .project-icon {
+      width: 48px;
+      height: 48px;
 
       display: grid;
       place-items: center;
@@ -939,20 +871,40 @@
       background:
         linear-gradient(
           145deg,
-          rgba(255,255,255,.09),
+          rgba(255,255,255,.10),
           rgba(255,255,255,.025)
         );
 
-      color: var(--silver-light);
-
-      font-size: 12px;
-      font-weight: 750;
-
-      letter-spacing: .05em;
+      color:
+        var(--silver-light);
 
       box-shadow:
-        inset 0 1px 0
-        rgba(255,255,255,.05);
+        inset 0 1px 0 rgba(255,255,255,.06),
+        0 8px 24px rgba(0,0,0,.12);
+
+      transition:
+        transform .22s ease,
+        color .22s ease,
+        border-color .22s ease,
+        background .22s ease;
+    }
+
+    .project-icon svg {
+      width: 23px;
+      height: 23px;
+    }
+
+    .project-card:hover .project-icon {
+      color: white;
+
+      border-color:
+        var(--border-strong);
+
+      background:
+        rgba(255,255,255,.09);
+
+      transform:
+        scale(1.06);
     }
 
 
@@ -978,7 +930,6 @@
       font-weight: 700;
     }
 
-
     .project-card h4 {
       margin:
         0 0
@@ -989,13 +940,11 @@
       letter-spacing: -.018em;
     }
 
-
     .project-card p {
       margin: 0;
 
       color: var(--silver-mid);
     }
-
 
     .stack {
       margin-top: 18px;
@@ -1004,7 +953,6 @@
 
       font-size: 13px;
     }
-
 
     .card-link {
       display: inline-flex;
@@ -1023,7 +971,6 @@
       font-weight: 700;
     }
 
-
     .card-link:hover {
       color: var(--silver);
     }
@@ -1036,7 +983,6 @@
     .timeline {
       position: relative;
     }
-
 
     .timeline::before {
       content: "";
@@ -1058,7 +1004,6 @@
         );
     }
 
-
     .role {
       position: relative;
 
@@ -1071,7 +1016,6 @@
 
       padding-bottom: 28px;
     }
-
 
     .role::before {
       content: "";
@@ -1098,11 +1042,9 @@
       z-index: 2;
     }
 
-
     .role.break::before {
       background: #858c96;
     }
-
 
     .role-date {
       padding-top: 20px;
@@ -1111,7 +1053,6 @@
 
       font-size: 14px;
     }
-
 
     .role-card {
       padding:
@@ -1123,7 +1064,6 @@
         background .25s ease,
         box-shadow .25s ease;
     }
-
 
     .role-card:hover {
       transform:
@@ -1143,13 +1083,11 @@
         var(--shadow-soft);
     }
 
-
     .role-card h4 {
       margin: 0;
 
       font-size: 21px;
     }
-
 
     .role-company {
       margin:
@@ -1158,7 +1096,6 @@
 
       color: #a7adb7;
     }
-
 
     .role-card p {
       margin: 0;
@@ -1169,29 +1106,26 @@
     }
 
 
+    /* Career break intentionally softer */
+
     .career-break-card {
       background:
         linear-gradient(
           145deg,
-          rgba(255,255,255,.042),
-          rgba(255,255,255,.012)
+          rgba(255,255,255,.040),
+          rgba(255,255,255,.010)
         );
 
       border-color:
         rgba(255,255,255,.075);
-
-      box-shadow:
-        inset 0 1px 0
-        rgba(255,255,255,.03);
     }
-
 
     .career-break-card:hover {
       background:
         linear-gradient(
           145deg,
-          rgba(255,255,255,.055),
-          rgba(255,255,255,.018)
+          rgba(255,255,255,.052),
+          rgba(255,255,255,.015)
         );
 
       border-color:
@@ -1210,7 +1144,6 @@
 
       gap: 9px;
     }
-
 
     .skill {
       padding:
@@ -1234,7 +1167,6 @@
         background .2s ease,
         color .2s ease;
     }
-
 
     .skill:hover {
       transform:
@@ -1267,7 +1199,6 @@
       gap: 17px;
     }
 
-
     .edu-card,
     .cert-card {
       padding: 24px;
@@ -1277,7 +1208,6 @@
         border-color .23s ease,
         box-shadow .23s ease;
     }
-
 
     .edu-card:hover,
     .cert-card:hover {
@@ -1291,7 +1221,6 @@
         var(--shadow-soft);
     }
 
-
     .edu-card h4,
     .cert-card h4 {
       margin:
@@ -1301,14 +1230,12 @@
       font-size: 20px;
     }
 
-
     .edu-card p,
     .cert-card p {
       margin: 0;
 
       color: var(--silver-mid);
     }
-
 
     .meta {
       margin-bottom: 9px;
@@ -1333,7 +1260,6 @@
       gap: 14px;
     }
 
-
     .language-card {
       padding: 22px;
 
@@ -1342,7 +1268,6 @@
         border-color .22s ease,
         box-shadow .22s ease;
     }
-
 
     .language-card:hover {
       transform:
@@ -1355,13 +1280,11 @@
         var(--shadow-soft);
     }
 
-
     .language-card strong {
       display: block;
 
       margin-bottom: 3px;
     }
-
 
     .language-card span {
       color: var(--silver-mid);
@@ -1383,11 +1306,9 @@
       gap: 22px;
     }
 
-
     .contact-panel {
       padding: 29px;
     }
-
 
     .contact-panel h4 {
       margin:
@@ -1397,11 +1318,9 @@
       font-size: 24px;
     }
 
-
     .contact-panel p {
       color: var(--silver-mid);
     }
-
 
     .contact-links {
       display: grid;
@@ -1410,7 +1329,6 @@
 
       margin-top: 23px;
     }
-
 
     .contact-link {
       display: flex;
@@ -1440,7 +1358,6 @@
         color .2s ease;
     }
 
-
     .contact-link:hover {
       transform:
         translateX(4px);
@@ -1453,7 +1370,6 @@
 
       color: white;
     }
-
 
     .contact-icon {
       width: 20px;
@@ -1468,7 +1384,6 @@
         color .2s ease;
     }
 
-
     .contact-link:hover
     .contact-icon {
       transform:
@@ -1477,13 +1392,11 @@
       color: white;
     }
 
-
     form {
       display: grid;
 
       gap: 14px;
     }
-
 
     .form-field {
       display: grid;
@@ -1491,14 +1404,12 @@
       gap: 6px;
     }
 
-
     label {
       color: #d9dce1;
 
       font-size: 13px;
       font-weight: 650;
     }
-
 
     input,
     textarea {
@@ -1525,12 +1436,10 @@
         background .2s ease;
     }
 
-
     input::placeholder,
     textarea::placeholder {
       color: #737b87;
     }
-
 
     input:focus,
     textarea:focus {
@@ -1545,13 +1454,11 @@
         rgba(255,255,255,.035);
     }
 
-
     textarea {
       min-height: 145px;
 
       resize: vertical;
     }
-
 
     button {
       width: fit-content;
@@ -1598,7 +1505,6 @@
         display: none;
       }
 
-
       .about-grid,
       .project-grid,
       .edu-grid,
@@ -1607,16 +1513,13 @@
         grid-template-columns: 1fr;
       }
 
-
       .language-grid {
         grid-template-columns: 1fr;
       }
 
-
       .timeline::before {
         left: 7px;
       }
-
 
       .role {
         grid-template-columns: 1fr;
@@ -1628,18 +1531,15 @@
         padding-bottom: 22px;
       }
 
-
       .role::before {
         left: 1px;
 
         top: 31px;
       }
 
-
       .role-date {
         padding-top: 0;
       }
-
 
       .hero {
         min-height: auto;
@@ -1657,26 +1557,21 @@
           calc(100% - 28px);
       }
 
-
       section {
         padding: 72px 0;
       }
-
 
       h1 {
         font-size: 52px;
       }
 
-
       .hero h2 {
         font-size: 27px;
       }
 
-
       .stats {
         gap: 22px;
       }
-
 
       .project-card,
       .edu-card,
@@ -1686,11 +1581,9 @@
         padding: 21px;
       }
 
-
       .hero-actions {
         align-items: stretch;
       }
-
 
       .hero-actions .button {
         width: 100%;
@@ -1704,7 +1597,6 @@
       html {
         scroll-behavior: auto;
       }
-
 
       *,
       *::before,
@@ -1847,6 +1739,8 @@
             </a>
 
 
+            <!-- GITHUB -->
+
             <a
               class="button secondary"
               href="https://github.com/mandeep-iOS"
@@ -1868,6 +1762,8 @@
             </a>
 
 
+            <!-- LINKEDIN -->
+
             <a
               class="button secondary"
               href="https://www.linkedin.com/in/mandeep-singh-50834219a/"
@@ -1888,6 +1784,8 @@
 
             </a>
 
+
+            <!-- EMAIL -->
 
             <a
               class="button secondary"
@@ -1913,9 +1811,7 @@
                   rx="2"
                 ></rect>
 
-                <path
-                  d="M3 7l9 6 9-6"
-                ></path>
+                <path d="M3 7l9 6 9-6"></path>
 
               </svg>
 
@@ -1931,41 +1827,18 @@
           <div class="stats">
 
             <div class="stat">
-
-              <strong>
-                5+ Years
-              </strong>
-
-              <span>
-                Commercial iOS
-              </span>
-
+              <strong>5+ Years</strong>
+              <span>Commercial iOS</span>
             </div>
 
-
             <div class="stat">
-
-              <strong>
-                Swift + AI
-              </strong>
-
-              <span>
-                Current Focus
-              </span>
-
+              <strong>Swift + AI</strong>
+              <span>Current Focus</span>
             </div>
 
-
             <div class="stat">
-
-              <strong>
-                BLE / IoT
-              </strong>
-
-              <span>
-                Connected Systems
-              </span>
-
+              <strong>BLE / IoT</strong>
+              <span>Connected Systems</span>
             </div>
 
           </div>
@@ -2008,7 +1881,6 @@
               production mobile applications.
             </p>
 
-
             <p>
               My background spans Swift, UIKit, SwiftUI,
               mobile architecture, Core Data, Realm,
@@ -2016,14 +1888,12 @@
               production debugging and App Store delivery.
             </p>
 
-
             <p>
               More recently, I’ve been combining that
               experience with Swift Concurrency,
               Core ML, on-device AI, RAG,
               LLM integration and Python/FastAPI backends.
             </p>
-
 
             <p>
               I’m currently focused on building modern
@@ -2074,7 +1944,7 @@
 
 
       <!-- =====================================================
-           WORK
+           SELECTED WORK
       ====================================================== -->
 
       <section
@@ -2102,12 +1972,26 @@
         <div class="project-grid">
 
 
+          <!-- TVS IQUBE -->
+
           <article
             class="project-card glass-card"
           >
 
             <div class="project-icon">
-              EV
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M13 2L4 14h7l-1 8 9-12h-7l1-8Z"/>
+              </svg>
+
             </div>
 
             <span class="badge">
@@ -2144,12 +2028,35 @@
 
 
 
+          <!-- DANCEX -->
+
           <article
             class="project-card glass-card"
           >
 
             <div class="project-icon">
-              iOS
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <rect
+                  x="6"
+                  y="2"
+                  width="12"
+                  height="20"
+                  rx="3"
+                />
+
+                <path d="M10 5h4"/>
+                <path d="M11 18h2"/>
+              </svg>
+
             </div>
 
             <span class="badge">
@@ -2185,12 +2092,29 @@
 
 
 
+          <!-- ASK MY DOCS -->
+
           <article
             class="project-card glass-card"
           >
 
             <div class="project-icon">
-              RAG
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h8"/>
+                <path d="M14 2v6h6"/>
+                <circle cx="17" cy="17" r="3"/>
+                <path d="m19.5 19.5 2 2"/>
+              </svg>
+
             </div>
 
             <span class="badge">
@@ -2217,12 +2141,45 @@
 
 
 
+          <!-- RECALL AI -->
+
           <article
             class="project-card glass-card"
           >
 
             <div class="project-icon">
-              AI
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <rect
+                  x="7"
+                  y="7"
+                  width="10"
+                  height="10"
+                  rx="2"
+                />
+
+                <path d="M9 1v3"/>
+                <path d="M15 1v3"/>
+                <path d="M9 20v3"/>
+                <path d="M15 20v3"/>
+
+                <path d="M20 9h3"/>
+                <path d="M20 14h3"/>
+
+                <path d="M1 9h3"/>
+                <path d="M1 14h3"/>
+
+                <path d="M10 10h4v4h-4z"/>
+              </svg>
+
             </div>
 
             <span class="badge">
@@ -2250,12 +2207,29 @@
 
 
 
+          <!-- MYVAANI -->
+
           <article
             class="project-card glass-card"
           >
 
             <div class="project-icon">
-              AV
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                aria-hidden="true"
+              >
+                <path d="M4 12v2"/>
+                <path d="M8 8v8"/>
+                <path d="M12 4v16"/>
+                <path d="M16 7v10"/>
+                <path d="M20 10v4"/>
+              </svg>
+
             </div>
 
             <span class="badge">
@@ -2281,12 +2255,39 @@
 
 
 
+          <!-- GAIA AGENT -->
+
           <article
             class="project-card glass-card"
           >
 
             <div class="project-icon">
-              AGENT
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <rect
+                  x="4"
+                  y="7"
+                  width="16"
+                  height="13"
+                  rx="3"
+                />
+
+                <path d="M12 3v4"/>
+
+                <circle cx="9" cy="13" r="1"/>
+                <circle cx="15" cy="13" r="1"/>
+
+                <path d="M9 17h6"/>
+              </svg>
+
             </div>
 
             <span class="badge">
@@ -2357,8 +2358,6 @@
         <div class="timeline">
 
 
-          <!-- CURRENT -->
-
           <article class="role">
 
             <div class="role-date">
@@ -2393,8 +2392,6 @@
 
 
 
-          <!-- CAREER BREAK -->
-
           <article class="role break">
 
             <div class="role-date">
@@ -2426,8 +2423,6 @@
           </article>
 
 
-
-          <!-- FREELANCE -->
 
           <article class="role">
 
@@ -2463,8 +2458,6 @@
 
 
 
-          <!-- EXTENTIA -->
-
           <article class="role">
 
             <div class="role-date">
@@ -2499,8 +2492,6 @@
 
 
 
-          <!-- SAFFRON -->
-
           <article class="role">
 
             <div class="role-date">
@@ -2532,8 +2523,6 @@
           </article>
 
 
-
-          <!-- SMARTWEBZONE -->
 
           <article class="role">
 
@@ -2568,8 +2557,6 @@
 
 
 
-          <!-- CQLSYS -->
-
           <article class="role">
 
             <div class="role-date">
@@ -2603,8 +2590,6 @@
 
 
 
-          <!-- TECHANGOUTS -->
-
           <article class="role">
 
             <div class="role-date">
@@ -2637,8 +2622,6 @@
           </article>
 
 
-
-          <!-- WEGILE -->
 
           <article class="role">
 
@@ -2927,7 +2910,6 @@
           <article
             class="cert-card glass-card"
           >
-
             <div class="meta">
               Amazon Web Services
             </div>
@@ -2935,15 +2917,12 @@
             <h4>
               AWS MLOps Demonstrated
             </h4>
-
           </article>
-
 
 
           <article
             class="cert-card glass-card"
           >
-
             <div class="meta">
               Hugging Face
             </div>
@@ -2951,15 +2930,12 @@
             <h4>
               Hugging Face Agents Course
             </h4>
-
           </article>
-
 
 
           <article
             class="cert-card glass-card"
           >
-
             <div class="meta">
               MongoDB
             </div>
@@ -2967,15 +2943,12 @@
             <h4>
               RAG Using MongoDB
             </h4>
-
           </article>
-
 
 
           <article
             class="cert-card glass-card"
           >
-
             <div class="meta">
               Neo4j
             </div>
@@ -2983,15 +2956,12 @@
             <h4>
               Neo4j & Gen AI Certification
             </h4>
-
           </article>
-
 
 
           <article
             class="cert-card glass-card"
           >
-
             <div class="meta">
               The Linux Foundation
             </div>
@@ -2999,15 +2969,12 @@
             <h4>
               Secure AI/ML-Driven Software Development
             </h4>
-
           </article>
-
 
 
           <article
             class="cert-card glass-card"
           >
-
             <div class="meta">
               Securiti AI
             </div>
@@ -3015,15 +2982,12 @@
             <h4>
               AI Governance Certification
             </h4>
-
           </article>
-
 
 
           <article
             class="cert-card glass-card"
           >
-
             <div class="meta">
               eCampusOntario
             </div>
@@ -3031,7 +2995,6 @@
             <h4>
               Artificial Intelligence
             </h4>
-
           </article>
 
 
@@ -3063,7 +3026,6 @@
           <article
             class="language-card glass-card"
           >
-
             <strong>
               English
             </strong>
@@ -3071,15 +3033,12 @@
             <span>
               Full professional proficiency
             </span>
-
           </article>
-
 
 
           <article
             class="language-card glass-card"
           >
-
             <strong>
               Hindi
             </strong>
@@ -3087,15 +3046,12 @@
             <span>
               Full professional proficiency
             </span>
-
           </article>
-
 
 
           <article
             class="language-card glass-card"
           >
-
             <strong>
               Punjabi
             </strong>
@@ -3103,7 +3059,6 @@
             <span>
               Native / bilingual proficiency
             </span>
-
           </article>
 
 
@@ -3143,7 +3098,7 @@
         <div class="contact-shell">
 
 
-          <!-- CONTACT INFO -->
+          <!-- CONTACT INFORMATION -->
 
           <div
             class="contact-panel glass-card"
@@ -3354,7 +3309,6 @@
               </div>
 
 
-
               <input
                 type="hidden"
                 name="_subject"
@@ -3378,9 +3332,7 @@
                   aria-hidden="true"
                 >
 
-                  <path
-                    d="M22 2L11 13"
-                  ></path>
+                  <path d="M22 2L11 13"></path>
 
                   <path
                     d="M22 2L15 22L11 13L2 9L22 2Z"
