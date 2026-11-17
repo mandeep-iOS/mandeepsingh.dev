@@ -745,6 +745,16 @@
       text-transform: uppercase;
     }
 
+    .cert-subsection {
+      margin-top: 26px;
+    }
+
+    .cert-subsection + .cert-subsection {
+      margin-top: 64px;
+      padding-top: 48px;
+      border-top: 1px solid rgba(255, 255, 255, .08);
+    }
+
     .sub-header-bar {
       display: flex;
       flex-wrap: wrap;
@@ -765,6 +775,7 @@
 
     .sub-header-bar p {
       margin: 0;
+      max-width: 720px;
       color: var(--silver-mid);
       font-size: 15px;
     }
@@ -1132,8 +1143,7 @@
           <a href="#work">Work</a>
           <a href="#experience">Experience</a>
           <a href="#education">Education</a>
-          <a href="#certifications">Badges</a>
-          <a href="#official-certificates">Certificates</a>
+          <a href="#certifications">Certifications &amp; Honors</a>
           <a href="#contact" class="nav-essential">Contact</a>
         </div>
       </nav>
@@ -2011,7 +2021,7 @@
       </section>
 
       <!-- =====================================================
-           CERTIFICATIONS & HONORS — MICROCREDENTIAL & BADGES LIST
+           CERTIFICATIONS & HONORS
       ====================================================== -->
 
       <section id="certifications">
@@ -2023,547 +2033,544 @@
           Certifications &amp; Honors
         </h3>
 
-        <div class="sub-header-bar">
-          <div>
-            <h4>Microcredential &amp; Badges List</h4>
-            <p>
-              Verified digital badges and microcredentials organized by issuing organization.
-            </p>
+        <!-- 1. OFFICIAL CERTIFICATE (FIRST) -->
+        <div id="official-certificates" class="cert-subsection">
+          <div class="sub-header-bar">
+            <div>
+              <h4>Official Certificate</h4>
+              <p>
+                Individual verified certificates ordered from major institutional,
+                hackathon, and specialized AI engineering credentials to foundational courses.
+              </p>
+            </div>
           </div>
-
-          <a
-            class="button secondary"
-            href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View All →
-          </a>
-        </div>
-
-        <!-- MONGODB -->
-        <div class="org-group">
-          <h5 class="org-title">MongoDB</h5>
 
           <div class="cert-grid">
 
+            <!-- 1. NASA -->
             <article class="cert-card glass-card">
-              <div class="meta">MongoDB</div>
-              <h4>Building RAG Apps Using MongoDB</h4>
-              <p>Architecting retrieval-augmented generation workflows with vector search and context grounding in MongoDB.</p>
-              <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
-                View Badge →
+              <div class="meta">NASA — National Aeronautics and Space Administration</div>
+              <h4>NASA Space Apps Challenge 2026 (Hackathon)</h4>
+              <p>NASA International Space Apps Challenge 2026 — Global Participant &amp; Galactic Problem Solver at Windsor University.</p>
+              <a
+                class="cert-action"
+                href="https://www.linkedin.com/in/mandeep-singh-50834219a/overlay/Certifications/1705287733/treasury?profileId=ACoAAC6uGFgBvG_9ocutCagIg37QP8lbQlwwVzs"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Show Credential →
               </a>
             </article>
 
+            <!-- 2. COLUMBIA UNIVERSITY -->
             <article class="cert-card glass-card">
-              <div class="meta">MongoDB</div>
-              <h4>Evaluating an Agentic Platform with MongoDB</h4>
-              <p>Measuring reliability, tool execution quality, and task outcomes across agentic AI systems.</p>
-              <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
-                View Badge →
+              <div class="meta">Columbia University</div>
+              <h4>Machine Learning — Certificate: Machine Learning I</h4>
+              <p>Supervised learning, linear regression, and core machine learning modeling foundations.</p>
+              <a
+                class="cert-action"
+                href="https://badges.plus.columbia.edu/e67fa036-8b4d-4a43-b47d-f1886d242245#acc.EPlncU4O"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Show Credential →
               </a>
             </article>
 
+            <!-- 3. HARVARD ONLINE -->
             <article class="cert-card glass-card">
-              <div class="meta">MongoDB</div>
-              <h4>Governance for AI Agents with MongoDB</h4>
-              <p>Applying guardrails, access controls, and compliance oversight to autonomous AI agents.</p>
-              <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
-                View Badge →
+              <div class="meta">Harvard Online</div>
+              <h4>Artificial Intelligence with Python (CS50's) — CS50AI Certificate</h4>
+              <p>Search algorithms, machine learning, neural networks, and intelligent decision-making in Python.</p>
+              <a
+                class="cert-action"
+                href="https://certificates.cs50.io/ae95d6b5-b327-45a5-aafd-5b0fd9ca4071.pdf?size=letter"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Show Credential →
               </a>
             </article>
 
+            <!-- 4. ANTHROPIC -->
             <article class="cert-card glass-card">
-              <div class="meta">MongoDB</div>
-              <h4>Observability for AI Agents</h4>
-              <p>Tracing agent steps, latency, and failure modes to debug and monitor production AI workflows.</p>
-              <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
-                View Badge →
+              <div class="meta">Anthropic</div>
+              <h4>Building with the Claude API</h4>
+              <p>Agentic AI development, Model Context Protocol (MCP) integrations, and production Claude API workflows.</p>
+              <a
+                class="cert-action"
+                href="https://academy.claude.com/verify/f3cae6096aa5cc256954b52e369883c5"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Show Credential →
               </a>
             </article>
 
+            <!-- 5. MICROSOFT -->
             <article class="cert-card glass-card">
-              <div class="meta">MongoDB</div>
-              <h4>Retrieval Evaluation</h4>
-              <p>Benchmarking chunking, relevance, and context precision for search and RAG pipelines.</p>
-              <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
-                View Badge →
+              <div class="meta">Microsoft</div>
+              <h4>Microsoft Applied Skills: Develop an agent with integrated tools</h4>
+              <p>Building AI agents with integrated tools using Microsoft Foundry and generative AI concepts.</p>
+              <a
+                class="cert-action"
+                href="https://learn.microsoft.com/en-ca/users/mandeepsingh-7975/credentials/930c7df700194b7e"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Show Credential →
               </a>
             </article>
 
+            <!-- 6. GOOGLE -->
             <article class="cert-card glass-card">
-              <div class="meta">MongoDB</div>
-              <h4>Building AI-Powered Search with MongoDB Vector Search</h4>
-              <p>Implementing semantic and hybrid search using dense vector embeddings in MongoDB.</p>
-              <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
-                View Badge →
+              <div class="meta">Google</div>
+              <h4>Build Collaborative Multi-Agent Systems with ADK &amp; MCP</h4>
+              <p>Designing multi-agent architectures and tool coordination using Agent Development Kit and Model Context Protocol.</p>
+              <a
+                class="cert-action"
+                href="https://partner.skills.google/public_profiles/977aaa83-9d30-4aa0-8a8f-b7d3449c1408/badges/27991611?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Show Credential →
               </a>
             </article>
 
-          </div>
-        </div>
-
-        <!-- THE LINUX FOUNDATION -->
-        <div class="org-group">
-          <h5 class="org-title">The Linux Foundation</h5>
-
-          <div class="cert-grid">
-
+            <!-- 7. HUGGING FACE (FINE-TUNING) -->
             <article class="cert-card glass-card">
-              <div class="meta">The Linux Foundation</div>
-              <h4>LFEL1012: Secure AI/ML-Driven Software Development</h4>
-              <p>Securing machine learning pipelines, models, and AI-assisted application lifecycles.</p>
-              <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
-                View Badge →
+              <div class="meta">Hugging Face</div>
+              <h4>Fine-tuning Language Models — Fine-Tuning LLM Certificate</h4>
+              <p>Fine-tuning transformer models and adapting large language models for specialized tasks.</p>
+              <a
+                class="cert-action"
+                href="https://huggingface.co/datasets/mdeep14/certificates/blob/main/README.md"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Show Credential →
               </a>
             </article>
 
+            <!-- 8. HUGGING FACE (AI AGENTS COURSE) -->
             <article class="cert-card glass-card">
-              <div class="meta">The Linux Foundation</div>
-              <h4>LFEL1002: Getting Started with Rust</h4>
-              <p>Memory-safe systems programming fundamentals, ownership, and concurrency in Rust.</p>
-              <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
-                View Badge →
+              <div class="meta">Hugging Face</div>
+              <h4>AI Agents Course — Certificate</h4>
+              <p>Building, tooling, and evaluating autonomous AI agents in the Hugging Face ecosystem.</p>
+              <a
+                class="cert-action"
+                href="https://huggingface.co/datasets/mdeep14/certificates/blob/main/README.md"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Show Credential →
               </a>
             </article>
 
+            <!-- 9. GENAI WORKS -->
             <article class="cert-card glass-card">
-              <div class="meta">The Linux Foundation</div>
-              <h4>LFD102: A Beginner's Guide to Open Source Software Development</h4>
-              <p>Open-source collaboration workflows, licensing basics, and community contribution practices.</p>
-              <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
-                View Badge →
+              <div class="meta">GenAI Works</div>
+              <h4>Claude Practitioner's Guide to AI Agents</h4>
+              <p>Practical patterns for designing, prompting, and operating Claude-powered AI agents.</p>
+              <a
+                class="cert-action"
+                href="https://academy.genai.works/api/certificates/file/GAA-2026-G43JG"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Show Credential →
               </a>
             </article>
 
-          </div>
-        </div>
-
-        <!-- AMAZON WEB SERVICES TRAINING AND CERTIFICATION -->
-        <div class="org-group">
-          <h5 class="org-title">Amazon Web Services Training and Certification</h5>
-
-          <div class="cert-grid">
-
+            <!-- 10. DATACAMP -->
             <article class="cert-card glass-card">
-              <div class="meta">Amazon Web Services Training and Certification</div>
-              <h4>AWS MLOps Demonstrated</h4>
-              <p>Practical demonstration of deploying, automating, and managing machine learning workflows on AWS.</p>
-              <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
-                View Badge →
+              <div class="meta">DataCamp</div>
+              <h4>AI Engineer for Developers Associate</h4>
+              <p>Developing AI-powered applications in Python using modern LLM and OpenAI API workflows.</p>
+              <a
+                class="cert-action"
+                href="https://www.datacamp.com/certificate/AIEDA0019852390348"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Show Credential →
               </a>
             </article>
 
+            <!-- 11. NEO4J -->
             <article class="cert-card glass-card">
-              <div class="meta">Amazon Web Services Training and Certification</div>
-              <h4>AWS Educate Introduction to Generative AI - Training Badge</h4>
-              <p>Foundational concepts of generative AI models, prompt patterns, and cloud AI capabilities on AWS.</p>
-              <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
-                View Badge →
+              <div class="meta">Neo4j</div>
+              <h4>Neo4j Graph Data Science Certification</h4>
+              <p>Graph analytics, graph algorithms, and graph-based data science workflows in Neo4j.</p>
+              <a
+                class="cert-action"
+                href="https://graphacademy.neo4j.com/c/0bb68b72-c661-49cd-addd-217c329ea2ff"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Show Credential →
               </a>
             </article>
 
-          </div>
-        </div>
+            <!-- 12. ONTARIO TECH UNIVERSITY -->
+            <article class="cert-card glass-card">
+              <div class="meta">Ontario Tech University</div>
+              <h4>Generative AI — GenAI Certificate</h4>
+              <p>Generative AI fundamentals, prompt engineering, and applied responsible AI practices.</p>
+              <a
+                class="cert-action"
+                href="https://catalog.ontariotechu.ca/certificates/thriving-in-the-age-of-generative-ai-1591.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Show Credential →
+              </a>
+            </article>
 
-        <!-- WORLDQUANT UNIVERSITY -->
-        <div class="org-group">
-          <h5 class="org-title">WorldQuant University</h5>
+            <!-- 13. UNIVERSITY OF MARYLAND -->
+            <article class="cert-card glass-card">
+              <div class="meta">University of Maryland</div>
+              <h4>AI &amp; Career Empowerment</h4>
+              <p>AI strategy and career development for adapting technical roles in an AI-driven landscape.</p>
+              <a
+                class="cert-action"
+                href="https://www.linkedin.com/in/mandeep-singh-50834219a/overlay/Certifications/413808602/treasury?profileId=ACoAAC6uGFgBvG_9ocutCagIg37QP8lbQlwwVzs"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Show Credential →
+              </a>
+            </article>
 
-          <div class="cert-grid">
-
+            <!-- 14. WORLDQUANT UNIVERSITY -->
             <article class="cert-card glass-card">
               <div class="meta">WorldQuant University</div>
-              <h4>Deep Learning Fundamentals Lab - Introductory</h4>
-              <p>Hands-on introductory lab covering neural network fundamentals and deep learning workflows.</p>
-              <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
-                View Badge →
+              <h4>Data Science Lab — Data Science Certificate</h4>
+              <p>Applied data science and Python workflows for analytical modeling and data exploration.</p>
+              <a
+                class="cert-action"
+                href="https://www.linkedin.com/in/mandeep-singh-50834219a/overlay/Certifications/990857351/treasury?profileId=ACoAAC6uGFgBvG_9ocutCagIg37QP8lbQlwwVzs"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Show Credential →
               </a>
             </article>
 
+            <!-- 15. SECURITI AI -->
             <article class="cert-card glass-card">
-              <div class="meta">WorldQuant University</div>
-              <h4>Data Science Modeling</h4>
-              <p>Building and evaluating statistical and machine learning models on real-world datasets.</p>
-              <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
-                View Badge →
+              <div class="meta">Securiti AI</div>
+              <h4>AI Governance</h4>
+              <p>AI policy, risk management, governance frameworks, and regulatory compliance.</p>
+              <a
+                class="cert-action"
+                href="https://education.securiti.ai/verification/14B4140ED-14B411C34-1451D2395"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Show Credential →
+              </a>
+            </article>
+
+            <!-- 16. ECAMPUSONTARIO -->
+            <article class="cert-card glass-card">
+              <div class="meta">eCampusOntario</div>
+              <h4>Artificial Intelligence (AI) Fundamentals</h4>
+              <p>Foundational concepts and practical applications of artificial intelligence.</p>
+              <a
+                class="cert-action"
+                href="https://credentials.ecampusontario.ca/check/546F595A266CA48A6CECF4103D9F05A2715DBBD033D9ED25066D8D641211B633Y3hGUmRCdzdMM1ZoVTBrSU1Mc2VnQS83QityekJoUUplWHJPeW9ybldqR1NLeXl0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Show Credential →
+              </a>
+            </article>
+
+            <!-- 17. COGNITIVE CLASS -->
+            <article class="cert-card glass-card">
+              <div class="meta">Cognitive Class</div>
+              <h4>Build Swift Mobile Apps with Watson AI Services</h4>
+              <p>Smart iOS apps in Swift using the IBM Watson Cloud Developer SDK to analyze text sentiment/emotion, identify image content via URLs, and synthesize text-to-speech audio.</p>
+              <a
+                class="cert-action"
+                href="https://courses.cognitiveclass.ai/certificates/26cee6bf710746189cc6ad569b1ba435"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Show Credential →
+              </a>
+            </article>
+
+            <!-- 18. UDEMY IOS 2027 -->
+            <article class="cert-card glass-card">
+              <div class="meta">Udemy</div>
+              <h4>iOS Development Masterclass 2027 – SwiftUI, SwiftData, AI</h4>
+              <p>Modern iOS application engineering with SwiftUI, SwiftData persistence, and AI integrations.</p>
+              <a
+                class="cert-action"
+                href="https://ude.my/UC-14b3a458-ac6c-4955-8cd5-f6ebf1f5a69b"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Show Credential →
+              </a>
+            </article>
+
+            <!-- 19. UDEMY ARKIT -->
+            <article class="cert-card glass-card">
+              <div class="meta">Udemy</div>
+              <h4>The Complete ARKit Course - Build 11 Augmented Reality Apps</h4>
+              <p>Building spatial and augmented reality iOS applications using Apple ARKit.</p>
+              <a
+                class="cert-action"
+                href="https://ude.my/UC-74d8bb2a-7226-4915-ac4f-76d733200f58"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Show Credential →
+              </a>
+            </article>
+
+            <!-- 20. UDEMY BLUETOOTH / IOT -->
+            <article class="cert-card glass-card">
+              <div class="meta">Udemy</div>
+              <h4>The Complete Bluetooth / IoT Design Course for iOS</h4>
+              <p>Designing Core Bluetooth and IoT-connected iOS experiences with hardware peripherals.</p>
+              <a
+                class="cert-action"
+                href="https://ude.my/UC-f2a90457-6cb3-4492-9ab8-aff1c504f162"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Show Credential →
               </a>
             </article>
 
           </div>
         </div>
 
-        <!-- IBM -->
-        <div class="org-group">
-          <h5 class="org-title">IBM</h5>
+        <!-- 2. MICROCREDENTIAL & BADGES LIST (SECOND) -->
+        <div id="microcredentials" class="cert-subsection">
+          <div class="sub-header-bar">
+            <div>
+              <h4>Microcredential &amp; Badges List</h4>
+              <p>
+                Verified digital badges and microcredentials organized by issuing organization.
+              </p>
+            </div>
 
-          <div class="cert-grid">
+            <a
+              class="button secondary"
+              href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View All →
+            </a>
+          </div>
 
-            <article class="cert-card glass-card">
-              <div class="meta">IBM</div>
-              <h4>Robots are coming! Build IoT apps with Watson AI, Swift, and Node-RED</h4>
-              <p>Connecting Swift and Node-RED IoT applications with Watson AI services for smart automation.</p>
-              <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
-                View Badge →
-              </a>
-            </article>
+          <!-- MONGODB -->
+          <div class="org-group">
+            <h5 class="org-title">MongoDB</h5>
 
+            <div class="cert-grid">
+
+              <article class="cert-card glass-card">
+                <div class="meta">MongoDB</div>
+                <h4>Building RAG Apps Using MongoDB</h4>
+                <p>Architecting retrieval-augmented generation workflows with vector search and context grounding in MongoDB.</p>
+                <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
+                  View Badge →
+                </a>
+              </article>
+
+              <article class="cert-card glass-card">
+                <div class="meta">MongoDB</div>
+                <h4>Evaluating an Agentic Platform with MongoDB</h4>
+                <p>Measuring reliability, tool execution quality, and task outcomes across agentic AI systems.</p>
+                <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
+                  View Badge →
+                </a>
+              </article>
+
+              <article class="cert-card glass-card">
+                <div class="meta">MongoDB</div>
+                <h4>Governance for AI Agents with MongoDB</h4>
+                <p>Applying guardrails, access controls, and compliance oversight to autonomous AI agents.</p>
+                <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
+                  View Badge →
+                </a>
+              </article>
+
+              <article class="cert-card glass-card">
+                <div class="meta">MongoDB</div>
+                <h4>Observability for AI Agents</h4>
+                <p>Tracing agent steps, latency, and failure modes to debug and monitor production AI workflows.</p>
+                <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
+                  View Badge →
+                </a>
+              </article>
+
+              <article class="cert-card glass-card">
+                <div class="meta">MongoDB</div>
+                <h4>Retrieval Evaluation</h4>
+                <p>Benchmarking chunking, relevance, and context precision for search and RAG pipelines.</p>
+                <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
+                  View Badge →
+                </a>
+              </article>
+
+              <article class="cert-card glass-card">
+                <div class="meta">MongoDB</div>
+                <h4>Building AI-Powered Search with MongoDB Vector Search</h4>
+                <p>Implementing semantic and hybrid search using dense vector embeddings in MongoDB.</p>
+                <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
+                  View Badge →
+                </a>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- THE LINUX FOUNDATION -->
+          <div class="org-group">
+            <h5 class="org-title">The Linux Foundation</h5>
+
+            <div class="cert-grid">
+
+              <article class="cert-card glass-card">
+                <div class="meta">The Linux Foundation</div>
+                <h4>LFEL1012: Secure AI/ML-Driven Software Development</h4>
+                <p>Securing machine learning pipelines, models, and AI-assisted application lifecycles.</p>
+                <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
+                  View Badge →
+                </a>
+              </article>
+
+              <article class="cert-card glass-card">
+                <div class="meta">The Linux Foundation</div>
+                <h4>LFEL1002: Getting Started with Rust</h4>
+                <p>Memory-safe systems programming fundamentals, ownership, and concurrency in Rust.</p>
+                <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
+                  View Badge →
+                </a>
+              </article>
+
+              <article class="cert-card glass-card">
+                <div class="meta">The Linux Foundation</div>
+                <h4>LFD102: A Beginner's Guide to Open Source Software Development</h4>
+                <p>Open-source collaboration workflows, licensing basics, and community contribution practices.</p>
+                <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
+                  View Badge →
+                </a>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- AMAZON WEB SERVICES TRAINING AND CERTIFICATION -->
+          <div class="org-group">
+            <h5 class="org-title">Amazon Web Services Training and Certification</h5>
+
+            <div class="cert-grid">
+
+              <article class="cert-card glass-card">
+                <div class="meta">Amazon Web Services Training and Certification</div>
+                <h4>AWS MLOps Demonstrated</h4>
+                <p>Practical demonstration of deploying, automating, and managing machine learning workflows on AWS.</p>
+                <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
+                  View Badge →
+                </a>
+              </article>
+
+              <article class="cert-card glass-card">
+                <div class="meta">Amazon Web Services Training and Certification</div>
+                <h4>AWS Educate Introduction to Generative AI - Training Badge</h4>
+                <p>Foundational concepts of generative AI models, prompt patterns, and cloud AI capabilities on AWS.</p>
+                <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
+                  View Badge →
+                </a>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- WORLDQUANT UNIVERSITY -->
+          <div class="org-group">
+            <h5 class="org-title">WorldQuant University</h5>
+
+            <div class="cert-grid">
+
+              <article class="cert-card glass-card">
+                <div class="meta">WorldQuant University</div>
+                <h4>Deep Learning Fundamentals Lab - Introductory</h4>
+                <p>Hands-on introductory lab covering neural network fundamentals and deep learning workflows.</p>
+                <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
+                  View Badge →
+                </a>
+              </article>
+
+              <article class="cert-card glass-card">
+                <div class="meta">WorldQuant University</div>
+                <h4>Data Science Modeling</h4>
+                <p>Building and evaluating statistical and machine learning models on real-world datasets.</p>
+                <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
+                  View Badge →
+                </a>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- IBM -->
+          <div class="org-group">
+            <h5 class="org-title">IBM</h5>
+
+            <div class="cert-grid">
+
+              <article class="cert-card glass-card">
+                <div class="meta">IBM</div>
+                <h4>Robots are coming! Build IoT apps with Watson AI, Swift, and Node-RED</h4>
+                <p>Connecting Swift and Node-RED IoT applications with Watson AI services for smart automation.</p>
+                <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
+                  View Badge →
+                </a>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- CISCO -->
+          <div class="org-group">
+            <h5 class="org-title">Cisco</h5>
+
+            <div class="cert-grid">
+
+              <article class="cert-card glass-card">
+                <div class="meta">Cisco</div>
+                <h4>Introduction to Greenhouse Gas Accounting for IT</h4>
+                <p>Measuring and reporting carbon emissions and sustainability metrics across IT infrastructure.</p>
+                <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
+                  View Badge →
+                </a>
+              </article>
+
+            </div>
+          </div>
+
+          <div class="view-all-row">
+            <a
+              class="button primary"
+              href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View All →
+            </a>
           </div>
         </div>
 
-        <!-- CISCO -->
-        <div class="org-group">
-          <h5 class="org-title">Cisco</h5>
-
-          <div class="cert-grid">
-
-            <article class="cert-card glass-card">
-              <div class="meta">Cisco</div>
-              <h4>Introduction to Greenhouse Gas Accounting for IT</h4>
-              <p>Measuring and reporting carbon emissions and sustainability metrics across IT infrastructure.</p>
-              <a class="cert-action" href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly" target="_blank" rel="noopener noreferrer">
-                View Badge →
-              </a>
-            </article>
-
-          </div>
-        </div>
-
-        <div class="view-all-row">
-          <a
-            class="button primary"
-            href="https://www.credly.com/users/mandeep-singh_ios_engineer/badges/credly"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View All →
-          </a>
-        </div>
-
-      </section>
-
-      <!-- =====================================================
-           OFFICIAL CERTIFICATE (SEPARATE CARDS, HIGH TO STANDARD)
-      ====================================================== -->
-
-      <section id="official-certificates">
-        <div class="section-label">
-          Verified Credentials
-        </div>
-
-        <h3>
-          Official Certificate
-        </h3>
-
-        <p class="section-intro">
-          Individual verified certificates ordered from major institutional,
-          hackathon, and specialized AI engineering credentials to foundational courses.
-        </p>
-
-        <div class="cert-grid">
-
-          <!-- 1. NASA -->
-          <article class="cert-card glass-card">
-            <div class="meta">NASA — National Aeronautics and Space Administration</div>
-            <h4>NASA Space Apps Challenge 2026 (Hackathon)</h4>
-            <p>NASA International Space Apps Challenge 2026 — Global Participant &amp; Galactic Problem Solver at Windsor University.</p>
-            <a
-              class="cert-action"
-              href="https://www.linkedin.com/in/mandeep-singh-50834219a/overlay/Certifications/1705287733/treasury?profileId=ACoAAC6uGFgBvG_9ocutCagIg37QP8lbQlwwVzs"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Show Credential →
-            </a>
-          </article>
-
-          <!-- 2. COLUMBIA UNIVERSITY -->
-          <article class="cert-card glass-card">
-            <div class="meta">Columbia University</div>
-            <h4>Machine Learning — Certificate: Machine Learning I</h4>
-            <p>Supervised learning, linear regression, and core machine learning modeling foundations.</p>
-            <a
-              class="cert-action"
-              href="https://badges.plus.columbia.edu/e67fa036-8b4d-4a43-b47d-f1886d242245#acc.EPlncU4O"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Show Credential →
-            </a>
-          </article>
-
-          <!-- 3. HARVARD ONLINE -->
-          <article class="cert-card glass-card">
-            <div class="meta">Harvard Online</div>
-            <h4>Artificial Intelligence with Python (CS50's) — CS50AI Certificate</h4>
-            <p>Search algorithms, machine learning, neural networks, and intelligent decision-making in Python.</p>
-            <a
-              class="cert-action"
-              href="https://certificates.cs50.io/ae95d6b5-b327-45a5-aafd-5b0fd9ca4071.pdf?size=letter"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Show Credential →
-            </a>
-          </article>
-
-          <!-- 4. ANTHROPIC -->
-          <article class="cert-card glass-card">
-            <div class="meta">Anthropic</div>
-            <h4>Building with the Claude API</h4>
-            <p>Agentic AI development, Model Context Protocol (MCP) integrations, and production Claude API workflows.</p>
-            <a
-              class="cert-action"
-              href="https://academy.claude.com/verify/f3cae6096aa5cc256954b52e369883c5"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Show Credential →
-            </a>
-          </article>
-
-          <!-- 5. MICROSOFT -->
-          <article class="cert-card glass-card">
-            <div class="meta">Microsoft</div>
-            <h4>Microsoft Applied Skills: Develop an agent with integrated tools</h4>
-            <p>Building AI agents with integrated tools using Microsoft Foundry and generative AI concepts.</p>
-            <a
-              class="cert-action"
-              href="https://learn.microsoft.com/en-ca/users/mandeepsingh-7975/credentials/930c7df700194b7e"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Show Credential →
-            </a>
-          </article>
-
-          <!-- 6. GOOGLE -->
-          <article class="cert-card glass-card">
-            <div class="meta">Google</div>
-            <h4>Build Collaborative Multi-Agent Systems with ADK &amp; MCP</h4>
-            <p>Designing multi-agent architectures and tool coordination using Agent Development Kit and Model Context Protocol.</p>
-            <a
-              class="cert-action"
-              href="https://partner.skills.google/public_profiles/977aaa83-9d30-4aa0-8a8f-b7d3449c1408/badges/27991611?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Show Credential →
-            </a>
-          </article>
-
-          <!-- 7. HUGGING FACE (FINE-TUNING) -->
-          <article class="cert-card glass-card">
-            <div class="meta">Hugging Face</div>
-            <h4>Fine-tuning Language Models — Fine-Tuning LLM Certificate</h4>
-            <p>Fine-tuning transformer models and adapting large language models for specialized tasks.</p>
-            <a
-              class="cert-action"
-              href="https://huggingface.co/datasets/mdeep14/certificates/blob/main/README.md"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Show Credential →
-            </a>
-          </article>
-
-          <!-- 8. HUGGING FACE (AI AGENTS COURSE) -->
-          <article class="cert-card glass-card">
-            <div class="meta">Hugging Face</div>
-            <h4>AI Agents Course — Certificate</h4>
-            <p>Building, tooling, and evaluating autonomous AI agents in the Hugging Face ecosystem.</p>
-            <a
-              class="cert-action"
-              href="https://huggingface.co/datasets/mdeep14/certificates/blob/main/README.md"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Show Credential →
-            </a>
-          </article>
-
-          <!-- 9. GENAI WORKS -->
-          <article class="cert-card glass-card">
-            <div class="meta">GenAI Works</div>
-            <h4>Claude Practitioner's Guide to AI Agents</h4>
-            <p>Practical patterns for designing, prompting, and operating Claude-powered AI agents.</p>
-            <a
-              class="cert-action"
-              href="https://academy.genai.works/api/certificates/file/GAA-2026-G43JG"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Show Credential →
-            </a>
-          </article>
-
-          <!-- 10. DATACAMP -->
-          <article class="cert-card glass-card">
-            <div class="meta">DataCamp</div>
-            <h4>AI Engineer for Developers Associate</h4>
-            <p>Developing AI-powered applications in Python using modern LLM and OpenAI API workflows.</p>
-            <a
-              class="cert-action"
-              href="https://www.datacamp.com/certificate/AIEDA0019852390348"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Show Credential →
-            </a>
-          </article>
-
-          <!-- 11. NEO4J -->
-          <article class="cert-card glass-card">
-            <div class="meta">Neo4j</div>
-            <h4>Neo4j Graph Data Science Certification</h4>
-            <p>Graph analytics, graph algorithms, and graph-based data science workflows in Neo4j.</p>
-            <a
-              class="cert-action"
-              href="https://graphacademy.neo4j.com/c/0bb68b72-c661-49cd-addd-217c329ea2ff"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Show Credential →
-            </a>
-          </article>
-
-          <!-- 12. ONTARIO TECH UNIVERSITY -->
-          <article class="cert-card glass-card">
-            <div class="meta">Ontario Tech University</div>
-            <h4>Generative AI — GenAI Certificate</h4>
-            <p>Generative AI fundamentals, prompt engineering, and applied responsible AI practices.</p>
-            <a
-              class="cert-action"
-              href="https://catalog.ontariotechu.ca/certificates/thriving-in-the-age-of-generative-ai-1591.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Show Credential →
-            </a>
-          </article>
-
-          <!-- 13. UNIVERSITY OF MARYLAND -->
-          <article class="cert-card glass-card">
-            <div class="meta">University of Maryland</div>
-            <h4>AI &amp; Career Empowerment</h4>
-            <p>AI strategy and career development for adapting technical roles in an AI-driven landscape.</p>
-            <a
-              class="cert-action"
-              href="https://www.linkedin.com/in/mandeep-singh-50834219a/overlay/Certifications/413808602/treasury?profileId=ACoAAC6uGFgBvG_9ocutCagIg37QP8lbQlwwVzs"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Show Credential →
-            </a>
-          </article>
-
-          <!-- 14. WORLDQUANT UNIVERSITY -->
-          <article class="cert-card glass-card">
-            <div class="meta">WorldQuant University</div>
-            <h4>Data Science Lab — Data Science Certificate</h4>
-            <p>Applied data science and Python workflows for analytical modeling and data exploration.</p>
-            <a
-              class="cert-action"
-              href="https://www.linkedin.com/in/mandeep-singh-50834219a/overlay/Certifications/990857351/treasury?profileId=ACoAAC6uGFgBvG_9ocutCagIg37QP8lbQlwwVzs"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Show Credential →
-            </a>
-          </article>
-
-          <!-- 15. SECURITI AI -->
-          <article class="cert-card glass-card">
-            <div class="meta">Securiti AI</div>
-            <h4>AI Governance</h4>
-            <p>AI policy, risk management, governance frameworks, and regulatory compliance.</p>
-            <a
-              class="cert-action"
-              href="https://education.securiti.ai/verification/14B4140ED-14B411C34-1451D2395"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Show Credential →
-            </a>
-          </article>
-
-          <!-- 16. ECAMPUSONTARIO -->
-          <article class="cert-card glass-card">
-            <div class="meta">eCampusOntario</div>
-            <h4>Artificial Intelligence (AI) Fundamentals</h4>
-            <p>Foundational concepts and practical applications of artificial intelligence.</p>
-            <a
-              class="cert-action"
-              href="https://credentials.ecampusontario.ca/check/546F595A266CA48A6CECF4103D9F05A2715DBBD033D9ED25066D8D641211B633Y3hGUmRCdzdMM1ZoVTBrSU1Mc2VnQS83QityekJoUUplWHJPeW9ybldqR1NLeXl0"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Show Credential →
-            </a>
-          </article>
-
-          <!-- 17. COGNITIVE CLASS -->
-          <article class="cert-card glass-card">
-            <div class="meta">Cognitive Class</div>
-            <h4>Build Swift Mobile Apps with Watson AI Services</h4>
-            <p>Smart iOS apps in Swift using the IBM Watson Cloud Developer SDK to analyze text sentiment/emotion, identify image content via URLs, and synthesize text-to-speech audio.</p>
-            <a
-              class="cert-action"
-              href="https://courses.cognitiveclass.ai/certificates/26cee6bf710746189cc6ad569b1ba435"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Show Credential →
-            </a>
-          </article>
-
-          <!-- 18. UDEMY IOS 2027 -->
-          <article class="cert-card glass-card">
-            <div class="meta">Udemy</div>
-            <h4>iOS Development Masterclass 2027 – SwiftUI, SwiftData, AI</h4>
-            <p>Modern iOS application engineering with SwiftUI, SwiftData persistence, and AI integrations.</p>
-            <a
-              class="cert-action"
-              href="https://ude.my/UC-14b3a458-ac6c-4955-8cd5-f6ebf1f5a69b"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Show Credential →
-            </a>
-          </article>
-
-          <!-- 19. UDEMY ARKIT -->
-          <article class="cert-card glass-card">
-            <div class="meta">Udemy</div>
-            <h4>The Complete ARKit Course - Build 11 Augmented Reality Apps</h4>
-            <p>Building spatial and augmented reality iOS applications using Apple ARKit.</p>
-            <a
-              class="cert-action"
-              href="https://ude.my/UC-74d8bb2a-7226-4915-ac4f-76d733200f58"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Show Credential →
-            </a>
-          </article>
-
-          <!-- 20. UDEMY BLUETOOTH / IOT -->
-          <article class="cert-card glass-card">
-            <div class="meta">Udemy</div>
-            <h4>The Complete Bluetooth / IoT Design Course for iOS</h4>
-            <p>Designing Core Bluetooth and IoT-connected iOS experiences with hardware peripherals.</p>
-            <a
-              class="cert-action"
-              href="https://ude.my/UC-f2a90457-6cb3-4492-9ab8-aff1c504f162"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Show Credential →
-            </a>
-          </article>
-
-        </div>
       </section>
 
       <!-- =====================================================
@@ -2632,19 +2639,40 @@
 
             <div class="contact-links">
 
-              <!-- PERSONAL EMAIL -->
-              <a class="contact-link" href="mailto:mdeep14293@gmail.com">
-                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <rect x="3" y="5" width="18" height="14" rx="2"></rect>
-                  <path d="M3 7l9 6 9-6"></path>
+              <!-- 1. LINKEDIN -->
+              <a class="contact-link" href="https://www.linkedin.com/in/mandeep-singh-50834219a/" target="_blank" rel="noopener noreferrer">
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M6.5 8.25H3V21h3.5V8.25ZM4.75 3A2.02 2.02 0 0 0 2.7 5a2.02 2.02 0 0 0 2.05 2A2.02 2.02 0 0 0 6.8 5 2.02 2.02 0 0 0 4.75 3ZM21 13.7c0-3.84-2.05-5.63-4.79-5.63-2.2 0-3.19 1.21-3.75 2.06V8.25H9V21h3.46v-6.32c0-1.67.32-3.29 2.39-3.29 2.04 0 2.06 1.91 2.06 3.4V21H21v-7.3Z"/>
                 </svg>
                 <span class="contact-link-meta">
-                  <span>mdeep14293@gmail.com</span>
-                  <small>Direct Email</small>
+                  <span>LinkedIn</span>
+                  <small>linkedin.com/in/mandeep-singh-50834219a</small>
                 </span>
               </a>
 
-              <!-- GG LABS WEBSITE -->
+              <!-- 2. GITHUB PERSONAL -->
+              <a class="contact-link" href="https://github.com/mandeep-iOS" target="_blank" rel="noopener noreferrer">
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 .7C5.73.7.7 5.73.7 12c0 5.02 3.26 9.28 7.79 10.78.57.1.78-.25.78-.55v-2.17c-3.17.69-3.84-1.35-3.84-1.35-.52-1.32-1.26-1.67-1.26-1.67-1.03-.71.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.74 2.66 1.24 3.31.95.1-.73.4-1.24.72-1.53-2.53-.29-5.19-1.27-5.19-5.64 0-1.25.45-2.27 1.17-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.13 1.17A10.8 10.8 0 0 1 12 6.01c.97 0 1.94.13 2.85.38 2.17-1.48 3.13-1.17 3.13-1.17.62 1.58.23 2.75.11 3.04.73.8 1.17 1.82 1.17 3.07 0 4.38-2.67 5.35-5.21 5.63.41.35.77 1.05.77 2.12v3.15c0 .3.21.66.79.55A11.31 11.31 0 0 0 23.3 12C23.3 5.73 18.27.7 12 .7Z"/>
+                </svg>
+                <span class="contact-link-meta">
+                  <span>GitHub (@mandeep-iOS)</span>
+                  <small>Personal Engineering Repositories</small>
+                </span>
+              </a>
+
+              <!-- 3. ORCID -->
+              <a class="contact-link" href="https://orcid.org/0009-0004-9183-8817" target="_blank" rel="noopener noreferrer">
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm-3.6 5.2a1.05 1.05 0 1 1-1.05 1.05A1.05 1.05 0 0 1 8.4 7.2Zm-.9 3.1h1.8v6.5H7.5Zm3.5 0h2.7c2.6 0 4.2 1.4 4.2 3.25S16.3 16.8 13.7 16.8H11Zm1.8 1.5v3.5h.9c1.5 0 2.4-.7 2.4-1.75s-.9-1.75-2.4-1.75Z"/>
+                </svg>
+                <span class="contact-link-meta">
+                  <span>ORCID Research Profile</span>
+                  <small>0009-0004-9183-8817</small>
+                </span>
+              </a>
+
+              <!-- 4. GGLL OFFICIAL WEBSITE -->
               <a class="contact-link" href="https://gglabs.study" target="_blank" rel="noopener noreferrer">
                 <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                   <circle cx="12" cy="12" r="10"></circle>
@@ -2657,29 +2685,7 @@
                 </span>
               </a>
 
-              <!-- LINKEDIN -->
-              <a class="contact-link" href="https://www.linkedin.com/in/mandeep-singh-50834219a/" target="_blank" rel="noopener noreferrer">
-                <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M6.5 8.25H3V21h3.5V8.25ZM4.75 3A2.02 2.02 0 0 0 2.7 5a2.02 2.02 0 0 0 2.05 2A2.02 2.02 0 0 0 6.8 5 2.02 2.02 0 0 0 4.75 3ZM21 13.7c0-3.84-2.05-5.63-4.79-5.63-2.2 0-3.19 1.21-3.75 2.06V8.25H9V21h3.46v-6.32c0-1.67.32-3.29 2.39-3.29 2.04 0 2.06 1.91 2.06 3.4V21H21v-7.3Z"/>
-                </svg>
-                <span class="contact-link-meta">
-                  <span>LinkedIn</span>
-                  <small>linkedin.com/in/mandeep-singh-50834219a</small>
-                </span>
-              </a>
-
-              <!-- GITHUB PERSONAL -->
-              <a class="contact-link" href="https://github.com/mandeep-iOS" target="_blank" rel="noopener noreferrer">
-                <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M12 .7C5.73.7.7 5.73.7 12c0 5.02 3.26 9.28 7.79 10.78.57.1.78-.25.78-.55v-2.17c-3.17.69-3.84-1.35-3.84-1.35-.52-1.32-1.26-1.67-1.26-1.67-1.03-.71.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.74 2.66 1.24 3.31.95.1-.73.4-1.24.72-1.53-2.53-.29-5.19-1.27-5.19-5.64 0-1.25.45-2.27 1.17-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.13 1.17A10.8 10.8 0 0 1 12 6.01c.97 0 1.94.13 2.85.38 2.17-1.48 3.13-1.17 3.13-1.17.62 1.58.23 2.75.11 3.04.73.8 1.17 1.82 1.17 3.07 0 4.38-2.67 5.35-5.21 5.63.41.35.77 1.05.77 2.12v3.15c0 .3.21.66.79.55A11.31 11.31 0 0 0 23.3 12C23.3 5.73 18.27.7 12 .7Z"/>
-                </svg>
-                <span class="contact-link-meta">
-                  <span>GitHub (@mandeep-iOS)</span>
-                  <small>Personal Engineering Repositories</small>
-                </span>
-              </a>
-
-              <!-- GITHUB LAB ORG -->
+              <!-- 5. GGLL GITHUB -->
               <a class="contact-link" href="https://github.com/gglabs-study" target="_blank" rel="noopener noreferrer">
                 <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                   <path d="M12 .7C5.73.7.7 5.73.7 12c0 5.02 3.26 9.28 7.79 10.78.57.1.78-.25.78-.55v-2.17c-3.17.69-3.84-1.35-3.84-1.35-.52-1.32-1.26-1.67-1.26-1.67-1.03-.71.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.74 2.66 1.24 3.31.95.1-.73.4-1.24.72-1.53-2.53-.29-5.19-1.27-5.19-5.64 0-1.25.45-2.27 1.17-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.13 1.17A10.8 10.8 0 0 1 12 6.01c.97 0 1.94.13 2.85.38 2.17-1.48 3.13-1.17 3.13-1.17.62 1.58.23 2.75.11 3.04.73.8 1.17 1.82 1.17 3.07 0 4.38-2.67 5.35-5.21 5.63.41.35.77 1.05.77 2.12v3.15c0 .3.21.66.79.55A11.31 11.31 0 0 0 23.3 12C23.3 5.73 18.27.7 12 .7Z"/>
@@ -2687,17 +2693,6 @@
                 <span class="contact-link-meta">
                   <span>GitHub (@gglabs-study)</span>
                   <small>Golden Gate Learning Labs Organization</small>
-                </span>
-              </a>
-
-              <!-- ORCID -->
-              <a class="contact-link" href="https://orcid.org/0009-0004-9183-8817" target="_blank" rel="noopener noreferrer">
-                <svg class="contact-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm-3.6 5.2a1.05 1.05 0 1 1-1.05 1.05A1.05 1.05 0 0 1 8.4 7.2Zm-.9 3.1h1.8v6.5H7.5Zm3.5 0h2.7c2.6 0 4.2 1.4 4.2 3.25S16.3 16.8 13.7 16.8H11Zm1.8 1.5v3.5h.9c1.5 0 2.4-.7 2.4-1.75s-.9-1.75-2.4-1.75Z"/>
-                </svg>
-                <span class="contact-link-meta">
-                  <span>ORCID Research Profile</span>
-                  <small>0009-0004-9183-8817</small>
                 </span>
               </a>
 
